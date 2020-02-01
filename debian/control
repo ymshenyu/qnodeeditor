@@ -1,0 +1,41 @@
+Source: qnodeeditor
+Section: libs
+Priority: optional
+Maintainer: Boyuan Yang <byang@debian.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-exec,
+ qtbase5-dev,
+ qt5-qmake,
+Standards-Version: 4.5.0
+Homepage: https://github.com/lhy0403/QNodeEditor
+Vcs-Git: https://salsa.debian.org/debian/qnodeeditor.git
+Vcs-Browser: https://salsa.debian.org/debian/qnodeeditor
+
+Package: libqnodeeditor-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ libqnodeeditor2 (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Qt-based library for graph-controlled data processing (dev)
+ NodeEditor is conceived as a general-purpose Qt-based library aimed
+ at graph-controlled data processing. The library can be used as a
+ framework for visual dataflow programming.
+ .
+ This package provides the development files.
+
+Package: libqnodeeditor2
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: Qt-based library for graph-controlled data processing
+ NodeEditor is conceived as a general-purpose Qt-based library aimed
+ at graph-controlled data processing. The library can be used as a
+ framework for visual dataflow programming.
+ .
+ This package provides the library files.
