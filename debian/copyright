@@ -1,6 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: QNodeEditor
 Source: https://github.com/lhy0403/QNodeEditor
+Files-Excluded: examples/* pictures/*
 
 Files: *
 Copyright: 2017, Dmitry Pinaev
