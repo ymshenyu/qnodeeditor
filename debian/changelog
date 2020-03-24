@@ -1,3 +1,12 @@
+qnodeeditor (2.1.5+ds2+1.1-1) unstable; urgency=medium
+
+  * Source-only upload to allow testing migration.
+  * Switch to actively-maintained branch, version string 1.1.
+  * debian/control:
+    + Use cmake instead of qmake following upstream.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 24 Mar 2020 10:41:29 -0400
+
 qnodeeditor (2.1.5+ds1-1) unstable; urgency=medium
 
   * Initial release.

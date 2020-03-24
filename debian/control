@@ -3,12 +3,12 @@ Section: libs
 Priority: optional
 Maintainer: Boyuan Yang <byang@debian.org>
 Build-Depends:
+ cmake,
  debhelper-compat (= 12),
  dh-exec,
  qtbase5-dev,
- qt5-qmake,
 Standards-Version: 4.5.0
-Homepage: https://github.com/lhy0403/QNodeEditor
+Homepage: https://github.com/Qv2ray/QNodeEditor
 Vcs-Git: https://salsa.debian.org/debian/qnodeeditor.git
 Vcs-Browser: https://salsa.debian.org/debian/qnodeeditor
 
