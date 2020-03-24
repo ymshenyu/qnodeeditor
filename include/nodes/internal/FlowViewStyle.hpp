@@ -1,37 +1,27 @@
 #pragma once
-
-#include <QtGui/QColor>
-
 #include "Export.hpp"
 #include "Style.hpp"
 
+#include <QtGui/QColor>
 namespace QtNodes
 {
-
     class NODE_EDITOR_PUBLIC FlowViewStyle : public Style
     {
-        public:
+      public:
+        FlowViewStyle();
+        FlowViewStyle(QString jsonText);
 
-            FlowViewStyle();
+      public:
+        static void setStyle(QString jsonText);
 
-            FlowViewStyle(QString jsonText);
+      private:
+        void loadJsonText(QString jsonText) override;
+        void loadJsonFile(QString fileName) override;
+        void loadJsonFromByteArray(QByteArray const &byteArray) override;
 
-        public:
-
-            static void setStyle(QString jsonText);
-
-        private:
-
-            void loadJsonText(QString jsonText) override;
-
-            void loadJsonFile(QString fileName) override;
-
-            void loadJsonFromByteArray(QByteArray const &byteArray) override;
-
-        public:
-
-            QColor BackgroundColor;
-            QColor FineGridColor;
-            QColor CoarseGridColor;
+      public:
+        QColor BackgroundColor;
+        QColor FineGridColor;
+        QColor CoarseGridColor;
     };
-}
+} // namespace QtNodes
