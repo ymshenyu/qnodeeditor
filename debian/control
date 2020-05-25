@@ -5,7 +5,6 @@ Maintainer: Boyuan Yang <byang@debian.org>
 Build-Depends:
  cmake,
  debhelper-compat (= 12),
- dh-exec,
  qtbase5-dev,
  libqt5charts5-dev,
 Standards-Version: 4.5.0
@@ -18,7 +17,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends:
- libqnodeeditor2 (= ${binary:Version}),
+ libqnodeeditor (= ${binary:Version}),
  ${misc:Depends},
 Description: Qt-based library for graph-controlled data processing (dev)
  NodeEditor is conceived as a general-purpose Qt-based library aimed
@@ -27,7 +26,7 @@ Description: Qt-based library for graph-controlled data processing (dev)
  .
  This package provides the development files.
 
-Package: libqnodeeditor2
+Package: libqnodeeditor
 Architecture: any
 Multi-Arch: same
 Depends:

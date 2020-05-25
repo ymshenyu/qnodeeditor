@@ -1,3 +1,9 @@
+qnodeeditor (2.1.6+ds1-1) unstable; urgency=medium
+
+  * Sync with upstream
+
+ -- Guobang Bi <ymshenyu@gmail.com>  Mon, 25 May 2020 18:13:53 +0800
+
 qnodeeditor (2.1.5+ds2+1.1-1) unstable; urgency=medium
 
   * Source-only upload to allow testing migration.
